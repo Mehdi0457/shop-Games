@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const devs = ['200644160179535872',''];
-var prefix = "!!";
-const adminprefix = "!!"
+const devs = ['543858517832892442',''];
+var prefix = "_";
+const adminprefix = "!"
 const db = require('quick.db');
 const client = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -229,7 +229,7 @@ if (err) console.error(err);
 client.on('message',function(message) {
   if(!message.channel.guild) return;
 
-const prefix = "#";
+const prefix = "_";
     if (message.content === prefix + "discrim") {
 let messageArray = message.content.split(" ");
 let args = messageArray.slice(1);
@@ -268,7 +268,7 @@ if(message.content === '!!voice') {
 
 
 client.on('message', async message => {
-	var prefix = "!!";
+	var prefix = "!";
   if(message.content.startsWith(prefix + "tc")) {
       if(message.author.bot) return;
     if(!message.channel.guild) return;
@@ -335,7 +335,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['!!help'];	
+    var setGame = ['_help'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -352,7 +352,7 @@ j = 1;
 });
 
 client.on('message' , message => {
-  var prefix = "!!";
+  var prefix = "_";
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "bcrole")) {
     let args = message.content.split(" ").slice(1);
@@ -514,8 +514,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 『!!embed/يكرر الي تقولو بشكل حلو』
 『!!discrim/كود يضهر لك الاشخاص نفس تاقك』
 『!!emoji <any things>/لتحويل اي كلمه تقولها الي ايموجي』
-『!!support/سيرفر الدعم』
-『!!contact/ارسال اقتراح او لمراسلة صاحب البوت』
+
 **
   `
 ,`
@@ -2970,7 +2969,7 @@ client.on("guildMemberAdd", member => {
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' !!help ','Malicious™ | Server ' ];
+    var setGame = [' _help ','Games Community | Server ' ];
     var i = -1;
     var j = 0;
     setInterval(function (){
